@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub search engine",
+  "description": "Adds a search engine that searches github.com",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "GitHub",
+      "search_url": "https://github.com/search?utf8=%E2%9C%93&q={searchTerms}&type=",
+      "keyword": "gh",
+      "favicon_url": "https://www.github.com/favicon.ico",
+      "is_default": false
+    }
+  }
+}
